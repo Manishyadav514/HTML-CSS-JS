@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Changer</title>
+    <link rel="stylesheet" href="js-project.css" />
+    <script src="js-project.js" defer></script>
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-center">
+        <ul class="links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="css-project.html">CSS-Project</a>
+          </li>
+          <li>
+            <a href="js-project.html">JS-Project</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+
+    <div class='container'>
+      <h2>Challange 9: Convertor</h2>
+      <div class="flex-container">
+    
+      </div>
+    </div>
+    
+    <div class='container'>
+      <h2>Challange 1: Convertor</h2>
+      <div class="flex-container">
+        <button class="but button1" onclick="ageInDays()">Click to enter your age</button>
+        <button class="but button2" onclick="remove()">Reset your age</button>
+      </div>
+      <div class="flex-container">
+        <div id='flex-box-result'>Your result will appear here:</div>
+      </div>
+    </div>
+    
+    <div class='container'>
+      <h2>Challange 2: Image Generator</h2>
+      <div class="flex-container">
+        <button class="but button1" onclick="imgGenerator()">Click to add images</button>
+        <button class="but button2" onclick="del()">Click to delete the image</button>
+      </div>
+      <div class="flex-container img">
+        <div id='img-gen'></div>
+      </div>
+    </div>
+    
+    <div class='container'>
+      <h2>Challange 3: Paper Scissor Rock</h2>
+      <div class="flex-container" id='challange-3-final'>
+        <div>
+          <img src="https://img.icons8.com/emoji/96/000000/rock-emoji.png" class="challange3" id="rock" onclick="rpsGame(this)">
+        </div>
+        <div>
+          <img src="https://img.icons8.com/color/48/000000/hand-scissors--v2.png" class="challange3" id="scissor" onclick="rpsGame(this)" />
+        </div>
+        <div>
+          <img src="https://img.icons8.com/cute-clipart/64/000000/paper.png" class="challange3" id="paper" onclick="rpsGame(this)" />
+        </div>
+      </div>
+    </div>
+    
+    <div class='container'>
+      <h2>Challange 4: Button Background color change:</h2>
+      <div class="flex-container">
+        <form type>
+          <select id="color-selection" name='backdrop' onchange="colorChange(this)">
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="random">random</option>
+            <option value="reset">reset</option>
+          </select>
+    
+        </form>
+      </div>
+      <div class="flex-container">
+        <button class="but button1" onclick="ageInDays()">Click to enter your age</button>
+        <button class="but button2" onclick="remove()">Reset your age</button>
+      </div>
+    </div>
+    
+    <div class='container'>
+      <h2>Challange 5: </h2>
+      <div id="body">
+        <div class="flex-container">
+          <button class="but " onclick="colorChange()">Click to change the box color</button>
+          <button class="but" id="btn">Click to change the body color </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class='container'>
+      <h2>Challange 6: </h2>
+      <div id="body">
+        <div class="flex-container">
+          <div class="box">
+            <p>Celsius : <input class="box-1" id="c" onkeyup="convert('C')">
+            <p>Farnehite : <input class="box-1" id="f" onkeyup="convert('F')"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class='container'>
+      <h2>Challange 7: </h2>
+      <div id="body">
+        <div class="flex-container">
+          <button onclick="on()">Turn on the light</button>
+          <img id="myImage" src="https://source.unsplash.com/100x100/?nature,water" style="width:100px">
+          <button onclick="off()">Turn off the light</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class='container'>
+      <h2>Challange 8: </h2>
+      <div id="body">
+        <div class="challange-8">
+        </div>
+      </div>
+    
+    </div>
+
+
+    <div id="challange-1" class="challange-1">
+      <button onclick="c1DivColorChanger()" class="challange-1-button">
+        Change div color
+      </button>
+      <button onclick="c1BodyColorChanger()" class="challange-1-button">
+        Change Body Color
+      </button>
+      <button onclick="c1HexColorChanger()" class="challange-1-button">
+        Random Hex Color
+      </button>
+      <h2>
+        background color :
+        <span class="color" id="challange-1-text">#f1f5f8</span>
+      </h2>
+    </div>
+    
+    <div class="container">
+      <h1>counter</h1>
+      <span id="value">0</span>
+      <div class="button-container">
+        <button class="btn decrease">decrease</button>
+        <button class="btn reset">reset</button>
+        <button class="btn increase">increase</button>
+      </div>
+    </div>
+    
+  </body>
+</html>
