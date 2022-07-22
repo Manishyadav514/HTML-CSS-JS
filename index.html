@@ -3,68 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar</title>
+    <title>navbarbar</title>
     <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
-
+    <script src="index.js" defer></script>
     <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
-    <nav>
-      <div class="nav-center">
-        <!-- nav header -->
-        <div class="nav-header">
-            <div class="logo">HTML-CSS-JS</div>
-          <!-- <img src="./logo.svg" class="logo" alt="logo" /> -->
-          <button class="nav-toggle">
-            <i class="fas fa-bars"></i>
-          </button>
+
+    <!-- <header id="home">
+      <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg" class="banner">
+        <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+        </video>
+    </header> -->
+    <header id="home">
+      <!-- navbar -->
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="lg2.png" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="#home" class="scroll-link">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="scroll-link">CSS-Project</a>
+              </li>
+              <li>
+                <a href="#services" class="scroll-link">JS-Project</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- links -->
-        <ul class="links">
-          <li>
-            <a href="index.html">home</a>
-          </li>
-          <li>
-            <a href="css-project.html">CSS-Project</a>
-          </li>
-          <li>
-            <a href="js-project.html">JS-Project</a>
-          </li>
-        </ul>
-        <!-- social media -->
-        <ul class="social-icons">
-          <li>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-behance"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-sketch"></i>
-            </a>
-          </li>
-        </ul>
+      </nav>
+      <!-- banner -->
+      <div class="banner">
+        <div class="container">
+          <h1>HTML-CSS-JS Project</h1>
+          <p>
+            Explore my creative Javascript, HTML, and CSS projects. 
+          </p>
+          <a href="#" class="scroll-link btn btn-white">About</a>
+        </div>
       </div>
-    </nav>
+    </header>
+
+    <section id="about" class="section">
+      <div class="title">
+        <h2>Javascript <span> Project</span></h2>
+      </div>
+      <div class="more-button">
+        <a href="JS/js-project.html" class="btn btn-white"
+          >Explore JS-Project</a
+        >
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="title">
+        <h2> CSS <span> Project</span></h2>
+      </div>
+      <div class="more-button">
+        <a href="CSS/css-project.html" class="btn btn-black"
+          >Explore CSS-Project</a
+        >
+      </div>
+    </section>
+
+    <footer class="section">
+      <p>
+        copyright &copy; happy vibes
+        <span id="date"></span>. all rights reserved
+      </p>
+    </footer>
+    <a class="scroll-link top-link" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
   </body>
 </html>
