@@ -822,11 +822,11 @@
   color:  #fff;
   background:  #222;
 }
-.section-center {
+.section_center {
 
 }
 @media screen and (min-width: 992px) {
-  .section-center {
+  .section_center {
     width: 95vw;
   }
 }
